@@ -1,125 +1,153 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: 'Fredoka', sans-serif; */
-    font-family: 'Hubballi', cursive;
- 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Fredoka', sans-serif; */
+  font-family: "Hubballi", cursive;
 }
 
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    padding: 1rem;
-    background: url(./images/cloud.png);
-    opacity: 1;
-    transition: 3s opacity;
+  padding: 1rem;
+  background: url(./images/cloud.png);
+  opacity: 1;
+  transition: 3s opacity;
 
-    /* background: linear-gradient(to right bottom, #cc2029 50%, #df3841 50%); */ 
+  /* background: linear-gradient(to right bottom, #cc2029 50%, #df3841 50%); */
 }
 
-body.fade-in{
-	opacity: 0;
-	transition: none;
+body.fade-in {
+  opacity: 0;
+  transition: none;
 }
 
 #loginCard {
-    width: 20rem;
-    height: 22rem;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.2);
+  width: 20rem;
+  height: 22rem;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .login-pg {
-    height: 100vh;
+  height: 100vh;
 }
 
+/* Dashboard */
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+#clock {
+  animation: blinker 2s linear infinite;
+}
+
+/* Status Form */
 .statusForm {
-    background-color:#f7f7f7;
-    padding: 1rem;
-    border-radius: 1%;
-    box-shadow: 5px 5px 10px 7px rgba(0,0,0,0.2);
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 1%;
+  box-shadow: 5px 5px 10px 7px rgba(0, 0, 0, 0.2);
+}
+.title {
+  color: white;
 }
 
+#project-btn {
+  float: right;
+  border-radius: 100%;
+  height: 2.25em;
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
+  color: grey;
+}
+
+#project-btn:hover {
+  background-color: #b4afaf;
+  color: black;
+}
 #logoutCard {
-    font-size: 18px;
-    width: 20rem;
-    height: 23rem;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.2);
+  font-size: 18px;
+  width: 20rem;
+  height: 23rem;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 #logout-btn {
-    margin-bottom: 3.5rem;
-    margin-right: 1rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  margin-bottom: 3.5rem;
+  margin-right: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .inputBox {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .sessionTimer {
-    text-align: right;
-    color: white;
+  text-align: right;
+  color: white;
 }
 
 .sub-btn {
-    margin-top: 1rem;
+  margin-top: 1rem;
+}
+
+#formGridExtra {
+  padding-bottom: 10px;
 }
 
 /* FormGrid */
 #p-wrap {
-    white-space: pre-line;
-    color: red;
+  white-space: pre-line;
+  color: red;
 }
 
 /* Navbar */
 .menu {
-    margin-bottom: 2rem;
-    padding-left: 10px;
-    border-radius: 2rem;
-    box-shadow: 0 7px 10px 1px rgba(0, 0, 0, .25);
-    backdrop-filter: blur(7px);  
+  margin-bottom: 2rem;
+  padding-left: 10px;
+  border-radius: 2rem;
+  box-shadow: 0 7px 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7px);
 }
-
 
 /* Tiles */
 .tiles {
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, .45);
-    border: 1px solid rgba(255, 255, 255, .25);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
-    backdrop-filter: blur(7px);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7px);
 }
 
 .jumbotron {
-    height: 18rem;
-    margin-bottom: 2rem;
+  height: 18rem;
+  margin-bottom: 2rem;
 }
 
 #greeting {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    justify-content: center;
-    font-size: 65px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  font-size: 65px;
 }
 
 .misc {
-    height: 30rem;
-    
+  height: 30rem;
 }
 
 .miscCards {
-    height: 15rem;
+  height: 15rem;
 }
